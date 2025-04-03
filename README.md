@@ -1,9 +1,18 @@
+# Blog Post Filter App
+### Description
+The Blog Post Filter App is a modern, responsive web application built with React. It allows users to browse and filter blog posts dynamically using a search bar. The app fetches data from an external API and displays it in a clean, user-friendly interface. Each post is presented as a card with details like title, category, author, and publication date. The app is styled with CSS for a professional and visually appealing design.
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+Features
+Dynamic Search: Filter blog posts in real-time by title.
+Responsive Design: Fully responsive layout that adapts to different screen sizes.
+Reusable Components: Modular components like PostCard, Header, and Navbar for scalability.
+API Integration: Fetches blog post data from an external API.
+Popup Modal: Displays detailed information about a post in a popup.
+Custom Styling: Styled with CSS for a clean and modern look.
+Technologies Used
+React: Component-based architecture for building the UI.
+CSS: Custom styles for layout and design.
+Fetch API: To retrieve data from an external source.
 
 In the project directory, you can run:
 
