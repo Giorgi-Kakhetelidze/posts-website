@@ -1,0 +1,152 @@
+/* header responsive design  */
+
+@media (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+
+  
+  
+}
+
+
+/* navbar responsive design  */
+
+@media (max-width: 1024px) {
+  .navbar-mob {
+    display: flex;
+  }
+
+  header {
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  .search-container:hover input {
+    width: 100px;
+  }
+
+  .burger {
+    left: 8%;
+  }
+
+  .horizontal-menu {
+    display: none;
+  }
+
+  .container {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  
+}
+
+/* posts container responsive  */
+
+@media (max-width: 1400px) {
+  .container {
+    margin-right: 11%;
+    margin-left: 11%;
+  }
+} 
+
+
+@media (max-width: 1026px) {
+  .container {
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+}
+
+@media (max-width: 953px) {
+  .post-card {
+    max-width: 43% !important;
+  }
+  .container {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .burger {
+    left: 10%;
+  }
+
+  .search-container {
+    right: 4%;
+  }
+}
+
+
+@media (max-width: 750px) {
+  .container {
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .container{
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  .search-container {
+    right: 0;
+  }
+
+  .logo-container svg,
+  .logo-container-mob svg {
+    height: 20px;
+  }
+
+  .close-btn svg {
+    height: 15px;
+  }
+
+  .search-container svg {
+    height: 15px;
+    
+  }
+
+  .burger {
+    left: 6%;
+  }
+
+  .line {
+    width: 23px;
+    height: 2px;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .logo-container svg{
+    height: 17px;
+  }
+
+  .search-container:hover input {
+    width: 60px;
+  }
+
+  .post-card {
+    max-width: 290px !important;
+  }
+
+  .popup {
+    max-width: 80% !important;
+  }
+
+  .search-container:hover input .search-container:hover input {
+    margin-right: 40px;
+  }
+
+  
+
+  .search-container {
+    height: 40px;
+  }
+
+}

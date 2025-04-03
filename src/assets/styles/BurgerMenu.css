@@ -1,0 +1,104 @@
+.navbar-mob {
+  position: relative;
+  display: none;
+}
+
+/* Burger icon */
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  left: 20px;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background: black;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Burger animation */
+.line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Menu styles */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 100vh;
+  z-index: 2;
+  background: white;
+  opacity: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu.open {
+  transform: translateX(0);
+}
+
+.nav-header-mob {
+  display: flex;
+  margin-top: 3.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.close-btn {
+  
+  font-size: 1.9rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: blue;
+}
+
+
+.mobile-ul li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 2rem;
+  font-weight: 500;
+}
