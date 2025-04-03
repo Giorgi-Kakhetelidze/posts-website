@@ -4,21 +4,18 @@ import "../../assets/styles/PostContainer.css";
 function PostCard({ post }) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  // Function to open the popup
   const openPopup = () => {
     setIsPopupOpen(true);
   };
 
-  // Function to close the popup
   const closePopup = (e) => {
-    e.stopPropagation(); // Prevent the event from bubbling up
+    e.stopPropagation(); 
     setIsPopupOpen(false);
   };
 
-  // Function to handle click outside of the popup to close it
   const handleOutsideClick = (e) => {
     if (e.target.classList.contains("popup-overlay")) {
-      closePopup(e); // Close the popup when clicking outside
+      closePopup(e); 
     }
   };
 
@@ -36,7 +33,6 @@ function PostCard({ post }) {
       </div>
       <p className="post-excerpt">{post.text}</p>
 
-      {/* Popup overlay */}
       {isPopupOpen && (
         <div
           className="popup-overlay"

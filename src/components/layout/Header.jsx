@@ -72,7 +72,6 @@ function Header({ searchTerm, setSearchTerm }) {
       </div>
 
       <Navbar />
-      {/* <MobileMenu/> */}
     </header>
   );
 }
